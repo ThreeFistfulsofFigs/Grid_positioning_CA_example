@@ -1,15 +1,23 @@
 .grid {
   border: 2px blue solid;
-  width: 400px;
   height: 500px;
+  width: 500px;
   display: grid;
-  grid-template-columns: 100px 50% 200px;
-  grid-template-rows: 40% 50% 50px;
+  grid-template-columns: 25% 25% 2fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px 15px;
 }
 
 .box {
-  background-color: #f5f5dc;
-  color: #000;
+  background-color: beige;
+  color: black;
   border-radius: 5px;
-  border: 2px #1E90FF solid;
+  border: 2px dodgerblue solid;
+}
+
+.a {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
